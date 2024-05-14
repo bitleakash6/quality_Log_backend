@@ -20,8 +20,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
     cors({
-       // origin: "http://localhost:3001", // <-- location of the react app were connecting to
-        origin: "https://logcontrolsoftware.netlify.app/",
+        origin: "http://localhost:3001", // <-- location of the react app were connecting to
+      //  origin: "https://quality-log-backend.onrender.com/",
         credentials: true,
     })
 );
