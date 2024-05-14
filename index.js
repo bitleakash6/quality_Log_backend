@@ -11,12 +11,17 @@ require("./db_connection");
 
 const PORT = process.env.PORT || 3000;
 
+// app.get('/', function (req, res) {
+//     res.send('Welcome to my Qaulity_Log_Control......');
+// })
+
 // Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
     cors({
-        origin: "http://localhost:3001", // <-- location of the react app were connecting to
+       // origin: "http://localhost:3001", // <-- location of the react app were connecting to
+        origin: "https://logcontrolsoftware.netlify.app/",
         credentials: true,
     })
 );
